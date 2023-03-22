@@ -9,6 +9,18 @@ public:
 	string surname;
 	int age;
 	float avg_mark;	
+
+	void init(string n, string sname, int a, float mark) {
+		name = n;
+		surname = sname;
+		age = a;
+		avg_mark = mark;
+	}
+
+	string convert_to_string() {
+		return name + " " + surname + " (age = " + to_string(age)
+			+ ", average mark = " + to_string(avg_mark) +")";
+	}
 };
 
 void clean_student(Student st) {
@@ -18,33 +30,16 @@ void clean_student(Student st) {
 	st.avg_mark = 0;
 }
 
-string convert_to_string(Student st) {
-	return st.name + " " + st.surname + " (age = "
-		+ to_string(st.age) + ", average mark = " + to_string(st.avg_mark)
-		+ ")";
-}
-
 int main() {
 	Student st1, st2, st3;
 	
-	st1.name = "Ivan";
-	st1.surname = "Ivanov";
-	st1.age = 14;
-	st1.avg_mark = 10;
+	st1.init("Ivan", "Ivanov", 14, 10);
+	st2.init("Genrih", "Gurshtinovich", 14, 9);
+	st3.init("Tigran", "Sarkesya", 14, 4);
 
-	st2.name = "Genrih";
-	st2.surname = "Gurshtinovich";
-	st2.age = 14;
-	st2.avg_mark = 9;
-
-	st3.name = "Tigran";
-	st3.surname = "Sarkesya";
-	st3.age = 14;
-	st3.avg_mark = 4;
-
-	cout << convert_to_string(st1) << endl;
-	cout << convert_to_string(st2) << endl;
-	cout << convert_to_string(st3) << endl;
+	cout << st1.convert_to_string() << endl;
+	cout << st2.convert_to_string() << endl;
+	cout << st3.convert_to_string() << endl;
 
 
 	/*Student st2 = st1;
