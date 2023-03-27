@@ -12,11 +12,20 @@ public:
 
 	// default-constructor (with no-args)
 	Student() {
-		//cout << "default-constructor" << endl;
+		cout << "default-constructor" << endl;
 		name = "no name";
 		surname = "no surname";
 		age = 16;
 		avg_mark = 4;
+	}
+
+	// constructor with params (with args)
+	Student(string n, string sname, int a, float mark) {
+		cout << "constructor with params" << endl;
+		name = n;
+		surname = sname;
+		age = a;
+		avg_mark = mark;
 	}
 
 	void init(string n, string sname, int a, float mark) {
@@ -45,11 +54,18 @@ Student get_best_student(Student st1, Student st2, Student st3) {
 }
 
 int main() {
-	Student st1, st2, st3;
+	Student st;
+	Student st1("Ivan", "Ivanov", 14, 10);
+	Student st2("Genrih", "Gurshtinovich", 14, 9);
+	Student st3("Tigran", "Sarkesya", 14, 4);
 
+	cout << st.convert_to_string() << endl;
+	
 	cout << st1.convert_to_string() << endl;
 	cout << st2.convert_to_string() << endl;
 	cout << st3.convert_to_string() << endl;
+
+
 
 	
 	/*st1.init("Ivan", "Ivanov", 14, 10);
