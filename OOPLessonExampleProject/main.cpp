@@ -44,11 +44,22 @@ public:
 		avg_mark = mark;
 	}
 
+	~Student() {
+		cout << "called Student destructor" << endl;
+	}
+
 	void init(string n, string sname, int a, float mark) {
 		name = n;
 		surname = sname;
 		age = a;
 		avg_mark = mark;
+	}
+
+	void init_default() {
+		name = "no name";
+		surname = "no surname";
+		age = 0;
+		avg_mark = 0;
 	}
 
 	string convert_to_string() {
@@ -57,12 +68,6 @@ public:
 	}
 };
 
-void clean_student(Student st) {
-	st.name = "no name";
-	st.surname = "no surname";
-	st.age = 0;
-	st.avg_mark = 0;
-}
 
 Student get_best_student(Student st1, Student st2, Student st3) {
 	return st1.avg_mark > st2.avg_mark && st1.avg_mark > st3.avg_mark ? st1 
