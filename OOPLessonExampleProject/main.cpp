@@ -10,6 +10,15 @@ public:
 	int age;
 	float avg_mark;	
 
+	// default-constructor (with no-args)
+	Student() {
+		//cout << "default-constructor" << endl;
+		name = "no name";
+		surname = "no surname";
+		age = 16;
+		avg_mark = 4;
+	}
+
 	void init(string n, string sname, int a, float mark) {
 		name = n;
 		surname = sname;
@@ -37,17 +46,22 @@ Student get_best_student(Student st1, Student st2, Student st3) {
 
 int main() {
 	Student st1, st2, st3;
+
+	cout << st1.convert_to_string() << endl;
+	cout << st2.convert_to_string() << endl;
+	cout << st3.convert_to_string() << endl;
+
 	
-	st1.init("Ivan", "Ivanov", 14, 10);
+	/*st1.init("Ivan", "Ivanov", 14, 10);
 	st2.init("Genrih", "Gurshtinovich", 14, 9);
-	st3.init("Tigran", "Sarkesya", 14, 4);
+	st3.init("Tigran", "Sarkesya", 14, 4);*/
 
 	//cout << st1.convert_to_string() << endl;
 	//cout << st2.convert_to_string() << endl;
 	//cout << st3.convert_to_string() << endl;
 
-	Student st = get_best_student(st1, st2, st3);
-	cout << "Best student: " << st.convert_to_string() << endl;
+	/*Student st = get_best_student(st1, st2, st3);
+	cout << "Best student: " << st.convert_to_string() << endl;*/
 
 
 	/*Student st2 = st1;
