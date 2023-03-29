@@ -55,7 +55,7 @@ public:
 
 	// default-constructor (with no-args)
 	Student() {
-		cout << "default-constructor" << endl;
+		//cout << "default-constructor" << endl;
 		name = "no name";
 		surname = "no surname";
 		age = 16;
@@ -64,7 +64,7 @@ public:
 
 	// constructor with params (with args)
 	Student(string n, string sname, int a, float mark) {
-		cout << "constructor with params" << endl;
+		//cout << "constructor with params" << endl;
 		name = n;
 		surname = sname;
 		age = a;
@@ -72,23 +72,23 @@ public:
 	}
 
 	Student(string n, string sname) {
-		cout << "constructor with params" << endl;
+		//cout << "constructor with params" << endl;
 		name = n;
 		surname = sname;
 	}
 
 	Student(int a) {
-		cout << "constructor with params" << endl;
+		//cout << "constructor with params" << endl;
 		age = a;
 	}
 
 	Student(float mark) {
-		cout << "constructor with params" << endl;
+		//cout << "constructor with params" << endl;
 		avg_mark = mark;
 	}
 
 	~Student() {
-		cout << "called Student destructor" << endl;
+		//cout << "called Student destructor" << endl;
 	}
 
 	void init(string n, string sname, int a, float mark) {

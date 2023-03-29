@@ -1,6 +1,7 @@
 #include "student.h"
 
 int main() {
+	string s;
 	Student st;
 	Student st1("Ivan", "Ivanov", 14, 10);
 	Student st2("Genrih", "Gurshtinovich");
