@@ -9,6 +9,11 @@ private:
 	float avg_mark;
 
 public:
+	const int MIN_AGE = 0;
+	const int MAX_AGE = 160;
+	const int MIN_MARK = 0;
+	const int MAX_MARK = 10;
+
 	Student();
 	Student(string n, string sname, int a, float mark);
 	Student(string n, string sname);
