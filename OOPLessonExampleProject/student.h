@@ -19,6 +19,8 @@ public:
 	Student(string n, string sname);
 	Student(int a);
 	Student(float mark);
+	Student(const Student &student);
+
 	~Student();
 
 	string get_name();
@@ -33,4 +35,6 @@ public:
 	void init(string n, string sname, int a, float mark);
 	void init_default();
 	string convert_to_string();
+
+
 };

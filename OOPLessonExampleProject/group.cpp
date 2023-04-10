@@ -10,14 +10,16 @@ Group::Group(string nm) {
 	name = nm;
 }
 
-~Group::Group() {}
+Group::~Group() {
+	delete[] list;
+}
 
 string Group::get_name() {
 	return name;
 }
 
 void Group::set_name(string nm) {
-	name = n;
+	name = nm;
 }
 
 bool Group::add(Student student) {
@@ -31,7 +33,16 @@ bool Group::add(Student student) {
 }
 
 void Group::remove(Student student) {}
-void Group::remove(int index) {}
+
+void Group::remove(int index) {
+	if (index >= 0 && index < size) {
+		for (int i = index; i < size; i++)
+		{
+			list[index] = list[index + 1];
+		}
+		size--;
+	}
+}
 
 Student Group::get(int index) {
 	if (index >= 0 && index < size) {
