@@ -12,16 +12,20 @@ private:
 
 public:
 	Group();
-	Group(Student* ls, int sz, string nm);
+	//Group(Student* ls, int sz, string nm);
 	Group(string nm);
 	~Group();
 
-	void add(Student student);
+	string get_name();
+	void set_name(string n);
+
+	bool add(Student student);
 	void remove(Student student);
 	void remove(int index);
 	Student get(int index);
-	int size();
+	int get_size();
 	string convert_to_string();
+	//...
 
 
 };

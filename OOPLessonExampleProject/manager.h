@@ -3,7 +3,7 @@
 
 class Manager {
 public:
-	float calculate_avg_mark(Student* list, int size) {
+	float calculate_avg_mark(Group group, int size) {
 		float avg = 0;
 
 		for (int i = 0; i < size; i++)

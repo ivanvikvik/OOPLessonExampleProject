@@ -24,6 +24,9 @@
     <ClCompile Include="group.h">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="group.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="student.h">
