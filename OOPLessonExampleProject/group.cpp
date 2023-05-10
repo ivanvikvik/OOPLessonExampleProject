@@ -10,9 +10,7 @@ Group::Group(string nm) {
 	name = nm;
 }
 
-Group::~Group() {
-	delete[] list;
-}
+Group::~Group() {}
 
 string Group::get_name() {
 	return name;
@@ -49,11 +47,13 @@ Student Group::get(int index) {
 		return list[index];
 	}
 
-	return NULL;
+	return Student();
 }
 
 int Group::get_size() {
 	return size;
 }
 
-string Group::convert_to_string() {}
+string Group::convert_to_string() {
+	return "";
+}
