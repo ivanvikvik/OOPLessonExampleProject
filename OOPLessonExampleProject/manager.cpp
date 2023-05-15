@@ -1,7 +1,7 @@
 #include "manager.h"
 
 float Manager::calculate_avg_mark(Group group) {
-	float avg = 0;
+	/*float avg = 0;
 
 	if (group.get_size() == 0) {
 		return 0;
@@ -11,5 +11,6 @@ float Manager::calculate_avg_mark(Group group) {
 	{
 		avg += group.get(i).get_avg_mark();
 	}
-	return avg / group.get_size();
+	return avg / group.get_size();*/
+	return 0;
 }
