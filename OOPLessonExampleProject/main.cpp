@@ -1,7 +1,8 @@
 #include "manager.h"
+#include "doctor.h"
 
 int main() {
-	Human h{ "Alex", "...", 20 };
-
+	Human h;
+	
 	return 0;
 }

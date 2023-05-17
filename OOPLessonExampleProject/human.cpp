@@ -27,9 +27,5 @@ void Human::set_age(int a) {
 }
 
 Human::~Human() {
+	cout << "Call Human destructor..." << endl;
 }
-
-//string Human::convert_to_string() {
-//	return name + " " + surname + " (age = " + to_string(age)
-//		+ ", average mark = " + to_string(avg_mark) + ")";
-//}

@@ -1,6 +1,7 @@
 #include "doctor.h"
 
 Doctor::~Doctor() {
+	cout << "Call Doctor destructor..." << endl;
 }
 
 int Doctor::get_experience() {

@@ -28,7 +28,5 @@ public:
 	void set_surname(string n);
 	int get_age();
 	void set_age(int a);
-
-	//string convert_to_string();
 };
 
