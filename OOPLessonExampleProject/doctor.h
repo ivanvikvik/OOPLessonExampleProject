@@ -8,9 +8,12 @@ private:
 	string skill;
 
 public:
-	Doctor();
-	Doctor(string n, string sname, int a, int experience, string skill);
-	Doctor(string n, string sname);
+	Doctor() :experience(0), skill("no skills") {}
+
+	Doctor(string name, string surname, int age, int experience, string skill)
+		: Human(name, surname, age), experience(experience), skill(skill) {}
+
+	Doctor(string name, string surname) : Human(name, surname) {}
 
 	~Doctor();
 

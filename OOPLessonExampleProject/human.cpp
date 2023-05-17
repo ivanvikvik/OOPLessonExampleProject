@@ -26,25 +26,6 @@ void Human::set_age(int a) {
 	}
 }
 
-// default-constructor (with no-args)
-Human::Human() {
-	name = "no name";
-	surname = "no surname";
-	age = 16;
-}
-
-// constructor with params (with args)
-Human::Human(string n, string sname, int a) {
-	name = n;
-	surname = sname;
-	age = a;
-}
-
-Human::Human(string n, string sname) {
-	name = n;
-	surname = sname;
-}
-
 Human::~Human() {
 }
 

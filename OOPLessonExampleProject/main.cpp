@@ -1,7 +1,7 @@
 #include "manager.h"
 
 int main() {
-	Student st;
+	Human h{ "Alex", "...", 20 };
 
 	return 0;
 }

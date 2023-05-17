@@ -1,22 +1,5 @@
 #include "doctor.h"
 
-Doctor::Doctor() {
-
-}
-
-Doctor::Doctor(string n, string sname, int a, int exp, string sk) {
-	set_name(n);
-	set_surname(sname);
-	set_age(a);
-	experience = exp;
-	skill = sk;
-}
-
-Doctor::Doctor(string n, string sname) {
-	set_name(n);
-	set_surname(sname);
-}
-
 Doctor::~Doctor() {
 }
 

@@ -7,14 +7,18 @@ private:
 	string name;
 	string surname;
 	int age;
-	
+
 public:
 	static const int MIN_AGE = 0;
 	static const int MAX_AGE = 160;
 
-	Human();
-	Human(string n, string sname, int a);
-	Human(string n, string sname);
+	Human() :name("no name"), surname("no surname"), age(16) {}
+
+	Human(string name, string surname, int age)
+		: name(name), surname(surname), age(age) {}
+
+	Human(string name, string surname)
+		: name(name), surname(surname) {}
 
 	~Human();
 
@@ -24,7 +28,7 @@ public:
 	void set_surname(string n);
 	int get_age();
 	void set_age(int a);
-	
+
 	//string convert_to_string();
 };
 
