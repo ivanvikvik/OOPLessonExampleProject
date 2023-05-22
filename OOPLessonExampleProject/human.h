@@ -8,14 +8,17 @@ private:
 	string surname;
 	int age;
 
-public:
+public:	
 	static const int MIN_AGE = 0;
 	static const int MAX_AGE = 160;
 
 	Human() :name("no name"), surname("no surname"), age(16) {}
 
-	Human(string name, string surname, int age)
-		: name(name), surname(surname), age(age) {}
+	Human(string name, string surname, int age)	{
+		this->name = name;
+		this->surname = surname;
+		this->age = age;
+	}
 
 	Human(string name, string surname)
 		: name(name), surname(surname) {}
